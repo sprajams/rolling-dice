@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rolling Dice</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form class="form">
+      <label for="numDice" class="form__label">Number of dice</label>
+      <input
+        type="number"
+        name="numDice"
+        id="numDice"
+        class="form__input"
+        required
+      />
+      <button type="submit" class="form__button">Roll</button>
+    </form>
+    <section>
+      <div class="dice">
+        <span class="dice__dot"></span>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
