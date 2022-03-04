@@ -1,9 +1,10 @@
-body {
-  padding: 100px;
+* {
+  box-sizing: border-box;
 }
 .form {
   display: flex;
   flex-direction: column;
+  min-width: fit-content;
   width: 25%;
   margin: auto;
   justify-content: center;
@@ -20,18 +21,43 @@ body {
   padding: 5px;
 }
 
-.dice {
+.face {
   border: 1px solid green;
   width: 75px;
   height: 75px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
-.dice__dot {
+.dot {
   background-color: red;
   border-radius: 50%;
   width: 15px;
   height: 15px;
   display: block;
+}
+.face__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.face__side {
+  display: flex;
+  flex-direction: column;
+}
+
+.face__bottom {
+  justify-content: flex-end;
+}
+.face__between {
+  justify-content: space-between;
+}
+.dice {
+  padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 100px;
+  }
 }

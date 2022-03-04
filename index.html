@@ -19,11 +19,79 @@
       />
       <button type="submit" class="form__button">Roll</button>
     </form>
-    <section>
-      <div class="dice">
-        <span class="dice__dot"></span>
+
+    <section class="dice">
+      <!-- 1 -->
+      <div class="face" id="one">
+        <div class="face__center">
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="face face__between" id="two">
+        <div class="face__side face__bottom">
+          <span class="dot"></span>
+        </div>
+        <div class="face_side">
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="face" id="three">
+        <div class="face__side face__bottom">
+          <span class="dot"></span>
+        </div>
+        <div class="face__center">
+          <span class="dot"></span>
+        </div>
+        <div class="face__side">
+          <span class="dot"></span>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="face face__between" id="four">
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="face" id="five">
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="face__center">
+          <span class="dot"></span>
+        </div>
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="face face__between" id="six">
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="face__side face__between">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
       </div>
     </section>
+
     <script src="index.js"></script>
   </body>
 </html>
