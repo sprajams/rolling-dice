@@ -27,6 +27,7 @@
   height: 75px;
   display: flex;
   padding: 10px;
+  margin: auto;
 }
 .dot {
   background-color: red;
@@ -54,6 +55,12 @@
 }
 .dice {
   padding: 20px;
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: auto;
+  min-width: fit-content;
 }
 
 @media screen and (min-width: 1024px) {
